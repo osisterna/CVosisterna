@@ -1,7 +1,29 @@
-p {
-    color: red;
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    gap: 10px;
+    grid-template-rows: repeat(9, auto);
+
+    justify-items: stretch;
 }
-h1 {
-    font-weight: bold;
-    color: green;
+.contenedor div {
+    background: rgb(37, 139, 143);
+    padding: 10px;
+}
+.contenedor div:hover{
+    border: 2px solid yellow;
+}
+
+.elemento1 {
+    grid-column: 1/13;
+    grid-row: 1/5;
+}
+
+.elemento2 {
+    grid-row: 5/auto;
+}
+
+.elemento3 {
+    grid-column: 2/13;
+    grid-row: 5/auto;
 }

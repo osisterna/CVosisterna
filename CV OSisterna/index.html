@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <title>CV OSisterna</title>
+    <link rel="icon" type="image/x-icon" href="/Imagenes/oslogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Sofia+Sans+Semi+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- íconos -->
+    <script src="https://kit.fontawesome.com/6a27070879.js" crossorigin="anonymous"></script>
+    <!--JQuery modal-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+</head>
+<body>
+    <header class="title">
+         <h1>CV Oscar Sisterna</h1>
+    </header>
+
+    <div class="container">
+        <header class="header">
+            <img src="os-logo" height="100px" alt="logotipo osd" srcset="/Imagenes/os-logo.png">
+            <h1>Oscar Sisterna Diseños</h1>
+        </header>
+
+        <section class="datos-personales">
+            <div class="datos">
+                <img src="os-foto" height="200px" alt="foto de oscar sisterna" srcset="/Imagenes/os-foto.png">
+                <h3>Datos personales</h3><br>
+                <ul>
+                    <li><i class="fa-sharp fa-solid fa-location-dot"></i> <br> Ig. de La Roza 207</li><br>
+                    <li>Provincia: <br> San Juan</li><br>
+                    <li><i class="fa-solid fa-mobile-screen-button"></i> <br> 264 6607607</li><br>
+                    <li><i class="fa-solid fa-envelope"></i> <br> osisterna@gmail.com</li><br>
+                </ul>
+            </div>                         
+            
+            <div class="datos">
+                <h2>Portfolio</h2> <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eum libero, dolore officiis atque id deleniti quidem illum optio beatae quis vitae eligendi repudiandae. Ea quis, quasi molestias iste harum quia dicta fuga perferendis inventore, ad voluptatibus necessitatibus corrupti rerum.</p><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consequuntur dolor nisi voluptate aliquam voluptas exercitationem officiis earum eius quasi soluta, possimus maxime aperiam hic dolores placeat, numquam nesciunt quo quibusdam! Exercitationem, ab id! Accusantium quisquam facilis incidunt pariatur debitis?</p> <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsa perferendis excepturi, praesentium reprehenderit odit tenetur veniam amet deserunt quia!</p>   
+            </div>
+        </section>
+    
+        <div class="contactarme">
+            
+            <h1>Contactarme</h1> <br>
+            
+            <div class="contactarme-wrapper">
+                <div class="contactarme-form">
+                    <form action="https://formsubmit.co/osisterna@gmail.com" method="POST">
+                        <p>
+                            <label for="Nombre completo">Nombre completo</label>
+                            <input type="text" required name="Nombre completo" id="nombrecompleto">
+                        </p>
+                        <p>
+                            <label for="Empresa">Empresa</label>
+                            <input type="text" name="Empresa" id="empresa">
+                        </p>
+                        <p>
+                            <label for="Email">Email</label>
+                            <input type="email" required name="Email" id="email">                      
+    
+                        </p>
+                        <p>
+                            <label for="Tel">Teleléfono</label>
+                            <input type="tel" required name="Tel" id="tel">
+                        </p>
+                        <p>
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea name="Mensaje" id="mensaje" rows="3"></textarea>
+                        </p>
+                        <button type="submit">
+                            Enviar
+                        </button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/CV%20OSisterna/index.html">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="experiencia-titulo">
+            <h1>Experiencia</h1>
+        </div>
+       
+        <div class="experiencia">
+            <h3>Diseño e impresión 3D</h3>
+            <img src="3D" height="250px" alt="Diseño 3D" srcset="/Imagenes/diseños3D.jpg">
+            <!--<button id="3D">Ver trabajos</button>-->
+
+            <!--Link to open the modal 3D-->
+           
+            <p><a href="#ex1" rel="modal:open">VER TRABAJOS</a></p>
+            </div>
+                        
+            <!--Modal HTML embedded directly into document-->
+            <div id="ex1" class="modal">
+            <div>
+                <img src="3D" height="600px" alt="impresoras 3D" srcset="/Imagenes/3D1.jpg">
+            </div>
+            <a href="#" rel="modal:close">Close</a>
+            </div>
+   
+        <div class="experiencia">
+            <h3>Enseñanza práctica en madera</h3>
+            <img src="macetas" height="250px" alt="macetas de madera" srcset="/Imagenes/macetas.jpg">
+            <!--<button id="madera">Ver trabajos</button>-->
+
+            <!--Link to open the modal MADERA-->
+            <p><a href="#ex2" rel="modal:open">VER TRABAJOS</a></p>
+           
+                        
+            <!--Modal HTML embedded directly into document-->
+            <div id="ex2" class="modal">
+            <div>
+            <img src="Madera" height="350px" alt="Muebles MDF" srcset="/Imagenes/muebles1.jpg">
+            </div>
+            <a href="#" rel="modal:close">Close</a>
+            </div>
+
+        </div>
+        <div class="experiencia">
+            <h3>Diseño grafico e impresión</h3>
+            <img src="tarjetas" height="250px" alt="tarjetas impresas" srcset="/Imagenes/tarjetas15.jpg">
+            <!--<button id="graficas">Ver trabajos</button>-->
+
+             <!--Link to open the modal GRAFICA-->             
+             <p><a href="#ex3" rel="modal:open">VER TRABAJOS</a></p>
+            </div>
+                        
+            <!--Modal HTML embedded directly into document-->
+            <div id="ex3" class="modal">
+            <div>
+            <img src="Grafica" height="500px" alt="Banners" srcset="/Imagenes/Banners1.jpg">
+            </div>
+            <a href="#" rel="modal:close">Close</a>
+            </div>
+
+        <footer class="footer">
+            <h3>Footer</h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sint?
+            </p>
+        </footer>            
+    
+    </div>
+ 
+</body>
+
+<!--JQuery modal-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="CV.js"></script>
+
+</html>

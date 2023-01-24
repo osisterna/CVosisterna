@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: rgb(153, 153, 153);
+    font-family: 'Quicksand', sans-serif;
+}
+/* header */
+.title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 4em;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    /*width: 90%;
+    max-width: 1000px;*/
+    margin: 1em auto;
+
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container > .header,
+.container > .datos-personales,
+.container > .contactarme,
+.container > .experiencia,
+.container > .footer,
+.container > div {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border: 3px solid rgb(52, 144, 230);
+}
+
+.container .header {
+    grid-column: 1/4;
+    background: rgb(40, 22, 111);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 20px;
+}
+
+.container .footer {
+    grid-column: 1/4;
+    background: rgb(40, 22, 111);
+    color: rgb(255, 255, 255);
+
+}
+
+.datos-personales {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(72, 84, 96);
+    border: rgb(40, 22, 111);
+   
+}
+
+.datos {
+    padding: 20px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.container > .datos-personales {
+    grid-column: span 2;
+    background: rgb(72, 84, 96);
+}
+
+
+.container > .contactarme {
+    grid-column: span 1;
+    background: rgb(72, 84, 96);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.contactarme h1 {
+    text-align: center;
+}
+
+.experiencia-titulo {
+    height: 20px;
+    grid-column: 1/4;
+    color: rgb(40, 22, 111);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.experiencia {
+    color: rgb(40, 22, 111);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 50px;
+}
+
+.experiencia button {
+        background:  rgb(40, 22, 111);
+        color: rgb(255, 255, 255);
+        padding: 1em;
+}
+
+.contactarme-wrapper {
+    box-shadow: 0px 0 20px 0 rgb(255, 255, 255, 3);
+}
+
+.contactarme-wrapper > * {
+    padding: 5px;
+}
+
+.contactarme-form {
+    margin: 0;
+    padding: 1em;
+}
+
+.contactarme-form form button,
+.contactarme-form form input,
+.contactarme-form form textarea {
+    width: 95%;
+    padding: 0.6em;
+    border: none;
+}
+
+.contactarme-form form button {
+    background:  rgb(40, 22, 111);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    margin-left: 5px;
+}
+
+@media (max-width: 650px) {
+    .header {
+        text-align: center;    
+    }
+.container {
+    grid-column: 1/-1;
+}
+
+.container .header {
+    justify-content: center;
+}
+
+.container .footer {
+    justify-content: center;
+}
+
+.container .datos-personales {
+    grid-column: 1/-1;
+}
+ 
+.container .contactarme {
+    grid-column: 1/-1;
+}
+
+.container .experiencia-titulo {
+   grid-column: 1/-1;
+}
+
+.container .experiencia {
+    grid-column: 1/-1;
+}
+
+}
+
+/* Efecto cambios
+.container > .experiencia {
+    border:  rgb(45, 52, 54);
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;    
+}
+
+.container > .experiencia:hover {
+    cursor: pointer;
+    border: rgb(0, 0, 0);
+}*/
